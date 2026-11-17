@@ -43,3 +43,25 @@ sequenceDiagram
     Guard-->>API: Pass (Verified Human Payload)
     API->>Bot: Dispatch Instant Lead Alert Webhook
     API-->>Prospect: 200 OK + Confirmation Receipt
+```
+
+---
+
+## Core Technical Features Showcase
+
+1. **Serverless Honeypot & Rate Limiting:** Custom request middleware shielding public intake routes from automated bot submissions without degrading user friction with CAPTCHAs.
+2. **Instant Lead Triage Webhook:** Real-time Telegram integration formatting and escaping MarkdownV2 payloads to notify engineering leads within seconds of submission.
+3. **Structured Search Engine Optimization:** Dynamic JSON-LD schema injection for technical consulting services and case study rich snippets.
+
+---
+
+## Repository Structure
+
+```text
+├── README.md
+├── docs/
+│   └── LEAD_TRIAGE_WORKFLOW.md
+└── samples/
+    ├── rate-limiter-middleware.ts
+    └── lead-triage-telegram.ts
+```
